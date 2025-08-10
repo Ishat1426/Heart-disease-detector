@@ -1,14 +1,45 @@
-This project aims to build and train a neural network model using TensorFlow/Keras for binary classification of heart disease. It includes data preprocessing steps, model training with callbacks for optimal performance, and an interactive command-line interface for new patient predictions.
+# 🫀 Heart Disease Detector
 
-Features
-Data Preprocessing: Handles numerical and categorical features using StandardScaler and OneHotEncoder.
+A deep learning project that predicts whether a patient has heart disease based on health data.  
+Built with **TensorFlow/Keras**, it includes data preprocessing, optimized training, model evaluation, and an interactive prediction interface.
 
-Deep Learning Model: A sequential neural network with multiple Dense layers, Dropout for regularization, and BatchNormalization for stable training.
+---
 
-Optimized Training: Utilizes Adam optimizer, EarlyStopping to prevent overfitting, and ReduceLROnPlateau for adaptive learning rate adjustments.
+## ✨ Features
+- **Data Preprocessing** — Handles numerical & categorical features using `StandardScaler` and `OneHotEncoder`.
+- **Deep Learning Model** — Sequential neural network with Dense layers, Dropout, and BatchNormalization.
+- **Optimized Training** — Uses Adam optimizer, EarlyStopping, and ReduceLROnPlateau for adaptive learning rates.
+- **Evaluation** — Outputs test accuracy, confusion matrix, and classification report.
+- **Learning Curves** — Plots accuracy & loss over epochs.
+- **Interactive Predictions** — Command-line interface for entering patient data and getting Yes/No results.
 
-Model Evaluation: Provides test accuracy, confusion matrix, and classification report.
+---
 
-Learning Curves: Plots training and validation accuracy/loss over epochs.
+## 🚀 How to Run
 
-Interactive Prediction: Allows users to input patient details and receive a "Yes" or "No" prediction for heart disease.
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/Ishat1426/heart-disease-detector.git
+cd heart-disease-detector
+
+
+2️⃣ Install dependencies
+Make sure Python 3.8+ is installed, then run:
+
+pip install -r requirements.txt
+
+
+3️⃣ Prepare the dataset
+Place your dataset file as data/dataset.csv
+
+Or use the provided one in the data/ folder
+
+Ensure the dataset matches the expected format (numerical + categorical features)
+
+4️⃣ Train the model
+
+python src/heart_disease_detector.py
+
+5️⃣ Make predictions (interactive mode)
+
+python src/app.py
