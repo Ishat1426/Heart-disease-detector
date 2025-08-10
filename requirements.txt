@@ -1,0 +1,5 @@
+pandas>=2.0.0
+numpy>=1.26.0
+scikit-learn>=1.0.0
+tensorflow==2.19.0 # Use exact version you have, or ~=2.19.0 for compatible minor versions
+matplotlib>=3.5.0
