@@ -9,7 +9,7 @@ from tensorflow.keras.regularizers import l2
 from sklearn.metrics import accuracy_score
 
 # Load dataset
-df = pd.read_csv(r"C:\Users\ishuv\OneDrive\Documents\Heart disease\dataset.csv")  # make sure your dataset path is correct
+df = pd.read_csv("dataset.csv")  # make sure your dataset path is correct
 
 # Split features & labels
 X = df.drop("target", axis=1)
